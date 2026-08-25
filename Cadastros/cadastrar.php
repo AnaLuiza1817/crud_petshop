@@ -1,5 +1,5 @@
 <?php
-require_once "../config/conexao.php";
+require_once '../infra/conexao.php';
 
 $mensagem = "";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar Cliente - AUmigos</title>
+    <title>Cadastrar Cliente - Pet Shop</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 

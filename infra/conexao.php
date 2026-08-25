@@ -1,15 +1,15 @@
 <?php
 
-$host = "localhost";
-$dbname = "aumigos";
-$usuario = "root";
-$senha = "";
+$host = 'localhost';
+$dbname = 'pet_shop';
+$usuario = 'root';
+$password = '';
 
 try {
     $pdo = new PDO(
         "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
         $usuario,
-        $senha
+        $password
     );
 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
