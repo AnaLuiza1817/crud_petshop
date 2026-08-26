@@ -1,20 +1,12 @@
 <?php
+    $host = "localhost";
+    $user = "root";
+    $password = "";
+    $database = "crud_petshop";
 
-$host = 'localhost';
-$dbname = 'pet_shop';
-$usuario = 'root';
-$password = '';
+$conn = new mysqli($host, $user, $password, $database);
 
-try {
-    $pdo = new PDO(
-        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
-        $usuario,
-        $password
-    );
-
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-} catch (PDOException $e) {
-    die("Erro na conexão com o banco de dados: " . $e->getMessage());
+if ($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
 }
 ?>

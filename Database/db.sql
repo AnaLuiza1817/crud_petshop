@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS pet_shop;
-USE pet_shop;
+CREATE DATABASE IF NOT EXISTS crud_petshop;
+USE crud_petshop;
 
 DROP TABLE IF EXISTS animais;
 DROP TABLE IF EXISTS clientes;
