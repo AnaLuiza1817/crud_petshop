@@ -21,3 +21,4 @@ CREATE TABLE animais (
     FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
 );
 
+ALTER TABLE animais ADD COLUMN peso DECIMAL(5,2) NOT NULL DEFAULT 0 AFTER idade;
